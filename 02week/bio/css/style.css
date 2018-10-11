@@ -1,0 +1,40 @@
+#res {
+    float: right;
+    /* margin-right: 100px; */
+}
+
+#proj {
+    float: right;
+    /* margin-right: 100px; */
+}
+
+#cont {
+    float: right;
+    /* margin-right: 100px; */
+}
+
+header {
+    border: 2px solid black;
+    background-color:  rgb(211, 139, 30);
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+    color: white;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
