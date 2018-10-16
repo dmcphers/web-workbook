@@ -1,0 +1,114 @@
+
+
+body {
+    /* border: 2px solid black; */
+    height: 580px;
+}
+
+header {
+    /* border: 2px solid black; */
+    background-color:  rgb(167, 160, 156);
+    color: black;
+    height: 160px;
+}
+
+.heading1 {
+    margin-left: 50px;
+    font-family: 'Merriweather', serif;
+    /* margin-top: 30px; */
+    /* border: 2px solid black; */
+}
+
+.heading2 {
+    margin-left: 100px;
+    font-family: 'Merriweather', serif;
+    /* border: 2px solid black; */
+    /* margin-top: 10px; */
+}
+
+ul {
+    list-style-type: none;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    padding: 0;
+    overflow: hidden;
+    /* border: 2px solid black; */
+    height: 50px;
+    font-family: 'Merriweather', serif;
+}
+
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li :hover {
+    color: white;
+}
+
+li {
+    margin-right: 20px;
+}
+
+#res {
+    float: right;
+    /* margin-right: 100px; */
+}
+
+#proj {
+    float: right;
+    /* margin-right: 100px; */
+}
+
+#cont {
+    float: right;
+    /* margin-right: 100px; */
+}
+
+img {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-bottom: 50px;
+}
+
+section {
+    float: right;
+    margin-top: 50px;
+    margin-right: 350px;
+    width: 300px;
+    font-family: 'Merriweather', serif;
+    /* border: 2px solid black; */
+}
+
+footer {
+    /* border: 2px solid black; */
+    background-color:  rgb(167, 160, 156);
+    color: black;
+    height: 80px;
+}
+
+.copyright {
+    float: left;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: .8em;
+}
+
+.social {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
