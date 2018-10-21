@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Pragati+Narrow" rel="stylesheet">
+    <title>Airplane</title>
+  </head>
+  
+    <body>
+        <header>
+        <div class="navbar">
+            <img src="img/logo.png">
+            <div class="navbar-right">
+                <img class="icons" src="img/home-icon.png">	
+                <a class="active" href="#">Home</a>
+                <img class="icons" src="img/deal-icon.png">
+                <a href="#">Travel Deals</a>
+                <img class="icons" src="img/schedule-icon.png">
+                <a href="#">Flight Schedule</a>
+                <img class="icons" src="img/login-icon.png">
+                <a href="#">Register/Login</a>
+            </div>
+        </div>
+        </header>
+
+          <main>
+            <article>
+              <div class="category">
+                <div class="singleicon">
+                  <img src="img/plane-icon.png">
+                </div>
+                <div class="singleicon">
+                  <img src="img/hotel-icon.png">
+                </div>
+                <div class="singleicon">
+                  <img src="img/car-icon.png">
+                </div>
+              </div>
+
+              <div class="container">
+                <div class="column">
+                  <input type="text" class="textinput" placeholder="Depart">
+                </div>
+                <div class="column">
+                  <input type="text" class="textinput" placeholder="Arrive">
+                </div>
+              </div>
+
+              <div class="container">
+                <div class="column">
+                  <input type="date" class="textinput" name="depart date">
+                </div>
+                <div class="column">
+                  <input type="date" class="textinput" name="arrive date">
+                </div>
+              </div>
+
+              <div class="passengers">
+                <span>Passengers</span>
+                <input type="number" min="1" max="100" value="1">	
+                <input type="radio" name="typeoftrip" value="Return">
+                Return
+                <input type="radio" name="typeoftrip" value="One Way">
+                One Way
+              </div>
+
+              <div class="submission">
+                <button type="submit" value="Search Flights">Search Flights</button>
+              </div>
+            </article>
+          </main>
+    </body>
+</html>
