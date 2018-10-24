@@ -1,33 +1,37 @@
 body {
     border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
 header {
     border: 2px solid orange;
+    height: 100px;
+    display: flex;
+    align-items: center;
 }
 
 nav {
     border: 2px solid red;
-    display: flex;
     width: 1100px;
-    justify-content: space-around;
-    margin: 5% auto;
     font-size: 1.5em;
     border-radius: 1em;
+    display: flex;
+    justify-content: space-around;
 }
 
 main {
     border: 2px solid black;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    height: 100%;
 }
 
 .image {
-    border: 2px solid grey;
+    border: 2px solid aqua;
     width: 1000px;
-    height: 60%;
+    height: 450px;
 }
 
 img {
@@ -38,22 +42,46 @@ img {
 article {
     border: 2px solid purple;
     width: 1000px;
-    height: 50%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
+    border: 2px solid yellow;
     font-size: 1.5em;
+    font-weight: 700;
+    padding: 10px;
+    color: red;
+    display: flex;
+    justify-content: center;
 }
 
 p {
-    margin: 35px 25px;
+    margin: 10px 25px;
    
 }
 
 footer {
     border: 2px solid teal;
     width: 1000px;
-    height: 20%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-info {
+    border: 2px solid salmon;
+    display: flex;
+    justify-content: center;
+   
+}
+
+#footer-copyright {
+    border: 2px solid fuchsia;
+    display: flex;
+    justify-content: center;
+   
 }
 
 
