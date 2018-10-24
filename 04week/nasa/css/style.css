@@ -1,0 +1,43 @@
+body {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-container {
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    background-image: url("../img/nasa-background.jpg");
+    width: 850px;
+    height: 450px;
+    margin: 0px auto;
+
+}
+
+.title {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+}
+
+h1 {
+    border: 2px solid blue;
+    
+}
+
+.main-container {
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    width: 850px;
+    height: 450px;
+    margin: 0px auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
