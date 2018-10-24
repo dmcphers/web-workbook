@@ -1,44 +1,64 @@
 
 
-html {
-    height: 100%;
-}
-
 body {
-    border: 2px solid blue;
+    border: 2px solid aqua;
     background-image: url("../img/body_image.jpg");
+    background-repeat: repeat;
     background-size: cover;
-    background-repeat: no-repeat;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
 }
 
-header {
-    border: 2px solid orange;
-    height: 100px;
+main {
+    /* border: 2px solid black; */
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
+/* begin header styling */
+
+header {
+    /* border: 2px solid orange; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#header-info {
+    /* border: 2px solid yellow; */
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+/* begin nav styling */
+
 nav {
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    background-color: firebrick;
+    color: white;
     width: 1100px;
+    height: 30px;
     font-size: 1.5em;
     border-radius: 1em;
     display: flex;
     justify-content: space-around;
 }
+/* end nav styling */
 
-main {
-    border: 2px solid black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+/* end header styling */
+
+
+
+/* begin main image styling */
 
 .image {
-    border: 2px solid aqua;
+    /* border: 2px solid aqua; */
     width: 1000px;
     height: 450px;
 }
@@ -47,50 +67,76 @@ img {
     width: 100%;
     height: 100%
 }
+/* end main image styling */
+
+
+
+/* begin main content styling */
 
 article {
     border: 2px solid purple;
+    background-color: white;
     width: 1000px;
     height: 300px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-h1 {
-    border: 2px solid yellow;
+#article-info-one {
     font-size: 1.5em;
     font-weight: 700;
-    padding: 10px;
+    margin-top: 10px;
+    padding: 5px;
     color: red;
     display: flex;
-    justify-content: center;
 }
+
+#article-info-two {
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 5px;
+    color: red;
+    display: flex;
+}
+
 
 p {
     margin: 10px 25px;
-   
+    text-indent: 20px;
 }
+
+/* end main content styling */
+
+
+
+/* footer styling */
 
 footer {
     border: 2px solid teal;
+    background-color:midnightblue;
+    color: white;
     width: 1000px;
     height: 60px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    border-radius: 0px 0px 15px 15px;
 }
 
 #footer-info {
-    border: 2px solid salmon;
+    /* border: 2px solid salmon; */
     display: flex;
     justify-content: center;
    
 }
 
 #footer-copyright {
-    border: 2px solid fuchsia;
+    /* border: 2px solid fuchsia; */
     display: flex;
     justify-content: center;
-   
 }
+
+/* end footer styling */
 
 
