@@ -1,0 +1,78 @@
+body {
+    /* border: 2px solid black; */
+    width: 850px;
+    margin: 0 auto;
+}
+
+.image-container {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/nasa-background.jpg");
+    height: 450px;
+}
+
+.title {
+    /* border: 2px solid teal; */
+    color: white;
+    font-size: 3em;
+}
+
+.main-container {
+    /* border: 2px solid green; */
+    background-color: #E6E6E6;
+    display: flex;
+    justify-content: space-around;
+    height: 324px;
+    margin: 20px 0px;
+    box-sizing: border-box;
+    
+}
+
+.column {
+    /* border: 2px solid purple; */
+    color: grey;
+}
+
+.column h1 {
+    color: black;
+    font-size: 1.2em;
+    padding: 10px 0;
+    font-weight: 900;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+  }
+
+.contact-form{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-sizing: border-box;
+  }
+
+  .fields .button{
+    box-sizing: border-box;
+    margin: 5px 15px;
+    height: 25px;
+  }
+
+  .button {
+      background-color: #4d4d4d;
+      color: #FFFFFF;
+      box-sizing: border-box;
+      width: 90px;
+      height: 35px;
+      font-size: 1.1em;
+  }
+
