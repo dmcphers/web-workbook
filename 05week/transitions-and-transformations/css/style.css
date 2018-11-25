@@ -1,0 +1,105 @@
+
+.container {
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    width: 6%;
+}
+
+.container>div {
+  /* border: 1px solid blue; */
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+.container>div:nth-child(1) {
+  background-color: blue;
+}
+
+.container>div:nth-child(2) {
+  background-color: red;
+}
+
+.container>div:nth-child(3) {
+  background-color: yellow;
+}
+
+.container>div:nth-child(4) {
+  background-color: grey;
+}
+
+.container>div:nth-child(5) {
+  background-color: brown;
+}
+
+.container>div:nth-child(6) {
+  background-color: green;
+}
+
+.container>div:nth-child(7) {
+  background-color: purple;
+}
+
+.container>div:nth-child(8) {
+  background-color: black;
+}
+
+.container>div:nth-child(9) {
+  background-color: lightblue;
+}
+
+.container>div:nth-child(10) {
+  background-color: lightgreen;
+}
+
+.container>div:nth-child(11) {
+  background-color: tan;
+}
+
+.container>div:nth-child(12) {
+  background-color: aqua;
+}
+
+.container :nth-child(odd) {
+  transition: all 1s;
+}
+.container :nth-child(even) {
+  transition: all 3s;
+}
+
+.container:hover :nth-child(odd) {
+  transform: translate(-500px) scale(.5) rotateZ(360deg);
+  transition: all .5s ease-in-out;
+  transition-delay: 2s;
+}
+
+.container:hover :nth-child(even) {
+  transform: translate(600px) scale(2.0) rotateZ(360deg);
+  transition: all 2s ease-in-out;
+}
+/* .square{
+    border: 1px solid black;
+    display: inline-block;
+    background-color: orange;
+    width: 50px;
+    height: 50px; */
+   
+  /*this is how to make it move    */
+    /* transition: margin-left 1s;
+    pointer-events: none;
+  } */
+
+  /* .square:hover {
+    margin-left: 350px;
+  }
+
+  .trigger:hover .square{
+    transform: translate(600px, 0px);
+ }
+ 
+ .trigger{
+   background-color: gray;
+   width: 50px;
+   height: 50px;
+   border: 2px solid lightgray;
+ }   */
