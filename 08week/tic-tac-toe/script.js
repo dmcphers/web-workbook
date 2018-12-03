@@ -3,20 +3,24 @@
   // Put app logic in here
   $(document).ready(function(){
     var turn = 'X';
+    var count = 0;
     $('[data-cell]').on('click', function(){
       if($(this).text() === ''){
         $(this).text(turn);
-        checkForWin();
+        count++;
+        checkForWin(count);
         if(turn === 'O'){
           turn = 'X';
-          
         }else{
           turn = 'O';
         }
       }
     })
     
-    function checkForWin(){
+    function checkForWin(tie){
+      if(count === 9){
+        $('#announce-winner').text(`Tie Game`); 
+      } 
       if($('[data-cell="0"]').text() === turn &&
         $('[data-cell="1"]').text() === turn &&
         $('[data-cell="2"]').text() === turn){
@@ -50,5 +54,11 @@
         $('[data-cell="6"]').text() === turn){
         $('#announce-winner').text(`${turn} wins`)
     }}
-    
+
    });
+
+   $('#clear').on('click', function(){
+    $('[data-cell]').text('');
+    $('#announce-winner').text('');
+    location.reload();
+  });
