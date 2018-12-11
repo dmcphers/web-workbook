@@ -1,1 +1,72 @@
 
+/* $vibrate: 2px; */
+
+* {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+body {
+    display: flex;
+}
+
+.dice {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin: 0 auto;
+}
+
+.total {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border: 1px solid blue;
+    border-radius: 3px;
+    margin: 0 auto;
+  }
+
+p {
+  font-size: 4em;  
+}
+
+.button {
+  border: none;
+  background: blue;
+  color: white;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  margin: 50px auto;
+  border-radius: 5px;
+}
+
+.animated {
+  animation: vibration 1.2s forwards;
+}
+
+/* @keyframes vibration {
+   0% {
+     left:-$vibrate; 
+     right:-$vibrate;
+  }
+  12.5%  {
+    left: $vibrate;
+    right: 0px;
+  }
+  25.0%  {
+    left: -$vibrate;
+    right: $vibrate;
+  }
+  37%  {
+    left: 0px;
+    right: -$vibrate;
+  }
+  50%  {
+    left: 0px;
+    right: $vibrate;
+  }
+} */
