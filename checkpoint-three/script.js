@@ -1,100 +1,91 @@
-// RollDice = {
-  
-//     init: function() {
-        
-//       this.bindEvents();
-//       this.roll();
-//     //   this.render();
-//     },
-  
+$(document).ready(function(){
+    var tot1 = 0;
+    var tot2 = 0;
+    var turn = 'p1';
+    var sides = 6;
+    var dice = {
+       sides: sides,
+       roll: function() {
+         var randomNumber = Math.floor(Math.random() * this.sides) + 1;
+         return randomNumber;
+         }
+    }
     
-//     roll: function() {
-//       var sides = 6;
-//       var randomRoll = Math.floor(Math.random() * sides) + 1;
-//       return randomRoll;
-//     },
+   $("#button").on("click",function(){
+       if(turn === 'p2'){
+      $("#button").prop("disabled",true);
+             }
+     
+    var result = dice.roll(); 
+    printNumber(result);
+     
+    tot1 = result + tot1;
+    var printDiceTotal = "Total: " + tot1;
+    $("#diceTotal").text(printDiceTotal);
     
-//     printNumber: function(number) {
-//       $('.js-number').html(number);
-//       console.log("dice roll is " + number);
-//     //   myTotal(number, total);
-//     },
+    turn = 'p2';
+    $("#p2turn").text("Player 2 turn");
+    $("#p1turn").text("");
+    $("#button2").prop("disabled",false);
+    $("#button").prop("disabled", true);
+     
+    if (tot1 > 20){
+      $("#win").text("Player 1 Wins!");
+      $("#p1turn").text("");
+      $("#p2turn").text("");
+      $("#button").prop("disabled",true);
+      $("#button2").prop("disabled",true);
+      }
+   });
     
-//     bindEvents: function() {
-//       $('.js-click').on( 'click', function() {
-//         //   var total = '';
-//          var result = RollDice.roll();
-//             // var total = total + result;
-//           RollDice.printNumber(result);
-//         // if ( $('.dice').hasClass('animated') ) {
-//         //   $('.dice').removeClass('animated')
-//         // } else {
-//         //   $('.dice').addClass('animated')
-//         // }
-//       })
-//     }
+    function printNumber(number) {
+       $("#dice").text(number);
+     }
     
-//     // render: function() {
-//     //     var total = 0;
-//     //    var result = RollDice.roll();
-//     //     var total = total + result;
-//     //    RollDice.printNumber(result, total); 
-//     //    $('.total').html(total);
-//     // }
+    $("#button2").on("click",function(){
+       if(turn === 'p1'){
+         $("#button2").prop("disabled",true);
+             }
+    var result = dice.roll();
+    printNumber2(result);
+      
+    tot2 = result + tot2;
+    var printDiceTotal = "Total: " + tot2;
+    $("#diceTotal2").text(printDiceTotal);
+   
+    turn = 'p1';
+    $("#p2turn").text("");
+    $("#p1turn").text("Player 1 turn");
+    $("#button2").prop("disabled",true);
+    $("#button").prop("disabled",false);
+      
+     if (tot2 > 20){
+      $("#win2").text("Player 2 Wins!");
+      $("#p1turn").text("");
+      $("#p2turn").text("");
+      $("#button").prop("disabled",true);
+      $("#button2").prop("disabled",true);
+       }
+    });
+    
+    function printNumber2(number) {
+     $("#dice2").text(number);
+     }
     
     
-// }
-  
- 
-//    RollDice.init();
-//   var total = 0;
-//   console.log('outside function');
-//   function myTotal(result, total){
-//       console.log(total);
-//   }
-
-
-
-    
-
-// $(document).ready(function(){
-    var total = 0;
-    var newtotal;
-    bindEvents();
-    // RollDice();
-    // printNumber(total);
-    // printTotalNumber();
-
-
-function bindEvents(){
-    $('.js-click').on( 'click', function() {
-       
-                 var newtotal = total + 1;
-                //  var result = RollDice();
-                // var newtotal = (result + total);
-                   printNumber(total, newtotal);
-                //   printTotalNumber(newtotal, result);
-    })
-}
-
-// function RollDice(){
-//     var sides = 6;
-//     var randomRoll = Math.floor(Math.random() * sides) + 1;
-//     return randomRoll;
-// }
-
-function printNumber(number, newtotal) {
-          $('.js-number').html(number);
-        //   $('.total').html(newtotal);
-          console.log("dice roll is " + number);
-          console.log("total is " + newtotal);
-        }
-
-//         function printTotalNumber(newtotal, result) {
-//             // $('.js-number').html(number);
-//            var grandTotal =  newtotal + result;
-//            $('.total').html(grandTotal);
-//             // console.log("dice roll is " + number);
-//             console.log("total is " + grandTotal);
-//           }
-//         // })
+  $("#newgame").on("click",function(){
+      $("#dice").text("");
+      $("#dice2").text("");
+      $("#diceTotal").text("");
+      $("#diceTotal2").text("");
+      $("#p1turn").text("");
+      $("#p2turn").text("");
+      $("#win").text("");
+      $("#win2").text("");
+      $("#button").prop("disabled",false);
+      $("#button2").prop("disabled",false);
+      tot1 = 0;
+      tot2 = 0;
+      var turn = 'p1';
+     })
+ });
