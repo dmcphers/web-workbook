@@ -3,6 +3,7 @@
 *** GENERAL
 **********************************************/
 
+
 * {
   margin: 0;
   padding: 0;
@@ -10,42 +11,34 @@
   
 }
 
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
+html{
+  height: 99%;
 }
 
 body {
-  background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/243004/back.jpg);
-  background-size: cover;
-  background-position: center;
-  font-family: Lato;
-  font-weight: 300;
-  position: relative;
-  height: 100vh;
-  color: #555;
+display: flex;
+justify-content: center;
+border: 2px solid red;
+height: 100%;
 }
 
-.wrapper {
-  width: 1000px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+.container {
+  width: 80%;
+  display: flex;
+  padding: 1%;
   overflow: hidden;
+  border: 2px solid black;
 }
 
-.player-0-panel,
-.player-1-panel {
+.player-1-area,
+.player-2-area {
+  display: flex;
+  flex-direction: column;
   width: 50%;
-  float: left;
-  height: 600px;
-  padding: 100px;
+  height: 100%;
+  padding: 10%;
+  border: 2px solid orange;
 }
-
 
 
 /**********************************************
@@ -53,117 +46,94 @@ body {
 **********************************************/
 
 .player-name {
-  font-size: 40px;
+  font-size: 2.5em;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 100;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  position: relative;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  border: 2px solid blue;
 }
 
-.player-score {
+.player-total-score {
   text-align: center;
-  font-size: 80px;
+  font-size: 5em;
   font-weight: 100;
   color: #EB4D4D;
-  margin-bottom: 130px;
+  margin-bottom: 20%;
+  border: 2px solid green;
 }
 
-.active { background-color: #f7f7f7; }
-.active .player-name { font-weight: 300; }
-
-.active .player-name::after {
-  content: "\2022";
-  font-size: 47px;
-  position: absolute;
-  color: #EB4D4D;
-  top: -7px;
-  right: 10px;
-  
-}
+.active { background-color: lightblue; }
+.active .player-name { font-weight: 550; border: 2px solid yellow;}
 
 .player-current-box {
   background-color: #EB4D4D;
   color: #fff;
   width: 40%;
   margin: 0 auto;
-  padding: 12px;
+  padding: 3%;
   text-align: center;
+  border: 2px solid purple;
 }
 
 .player-current-label {
   text-transform: uppercase;
-  margin-bottom: 10px;
-  font-size: 12px;
+  margin-bottom: 10%;
+  font-size: .9em;
+  font-weight: 550;
   color: #222;
+  border: 2px solid aqua;
 }
 
 .player-current-score {
-  font-size: 30px;
+  font-size: 2em;
+  border: 2px solid tan;
 }
 
 button {
-  position: absolute;
-  width: 200px;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 40%;
   color: #555;
   background: none;
-  border: none;
   font-family: Lato;
   font-size: 20px;
   text-transform: uppercase;
   cursor: pointer;
   font-weight: 300;
   transition: background-color 0.3s, color 0.3s;
+  border: 2px solid black;
 }
 
 button:hover { font-weight: 600; }
-button:hover i { margin-right: 20px; }
 
 button:focus {
   outline: none;
 }
 
-i {
-  color: #EB4D4D;
-  display: inline-block;
-  margin-right: 15px;
-  font-size: 32px;
-  line-height: 1;
-  vertical-align: text-top;
-  margin-top: -4px;
-  transition: margin 0.3s;
-}
+.btn-new {top: 7%; left: 40%; position: absolute; width: 20%;}
+.btn-roll { margin: 5% auto;}
 
-.btn-new { top: 45px;}
-.btn-roll { top: 403px;}
-.btn-hold { top: 467px;}
-
-.dice, .dice2 {
+.dice1, .dice2 {
   position: absolute;
-  height: 100px;
+  height: 13%;
   box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
-  top: 190px;
+  top: 40%;
+  border: 1px solid black;
 }
-.dice {
- left: 35%;
+.dice1 {
+ left: 40%;
 }
+
 .dice2 {
-  left: 55%;
-border: 1px solid black;
+  left: 53%;
 }
 
 .winner { background-color: #f7f7f7; }
-.winner .player-name { font-weight: 300; color: #EB4D4D; }
+.winner .player-name { font-weight: 550; color: #EB4D4D; }
 .winningScore {
   position: absolute;
-  top: 80px;
-  left: 45%;
-}
-
-#dice{
-border: 2px solid red;
+  top: 13%;
+  left: 44%;
+  border: 2px solid blue;
 } 
