@@ -18,14 +18,14 @@ html{
 body {
 display: flex;
 justify-content: center;
-border: 2px solid red;
+/* border: 2px solid red; */
 height: 100%;
+  background-color: #EB4D4D
 }
 
 .container {
   width: 80%;
   display: flex;
-  padding: 1%;
   overflow: hidden;
   border: 2px solid black;
 }
@@ -37,12 +37,30 @@ height: 100%;
   width: 50%;
   height: 100%;
   padding: 10%;
-  border: 2px solid orange;
+  background-color: #FFF;
+/*   border: 2px solid orange; */
+}
+
+/* user input text box styling */
+.winningScore {
+  position: absolute;
+  top: 16%;
+  left: 43%;
+  width: 14%;
+  text-align: center;
+  border: 2px solid black;
+} 
+
+/* instructions for how to play game */
+.instructions {
+  border-bottom: 2px solid black;
+  position: absolute;
+  left: 20%;
 }
 
 
 /**********************************************
-*** PLAYERS
+*** PLAYER ELEMENTS AND PROPERTIES
 **********************************************/
 
 .player-name {
@@ -53,7 +71,7 @@ height: 100%;
   font-weight: 100;
   margin-top: 3%;
   margin-bottom: 5%;
-  border: 2px solid blue;
+/*   border: 2px solid blue; */
 }
 
 .player-total-score {
@@ -62,11 +80,14 @@ height: 100%;
   font-weight: 100;
   color: #EB4D4D;
   margin-bottom: 20%;
-  border: 2px solid green;
+/*   border: 2px solid green; */
 }
 
 .active { background-color: lightblue; }
-.active .player-name { font-weight: 550; border: 2px solid yellow;}
+.active .player-name { 
+  font-weight: 550; 
+/*   border: 2px solid yellow; */
+}
 
 .player-current-box {
   background-color: #EB4D4D;
@@ -75,7 +96,7 @@ height: 100%;
   margin: 0 auto;
   padding: 3%;
   text-align: center;
-  border: 2px solid purple;
+/*   border: 2px solid purple; */
 }
 
 .player-current-label {
@@ -84,13 +105,20 @@ height: 100%;
   font-size: .9em;
   font-weight: 550;
   color: #222;
-  border: 2px solid aqua;
+/*   border: 2px solid aqua; */
 }
 
 .player-current-score {
   font-size: 2em;
-  border: 2px solid tan;
+/*   border: 2px solid tan; */
 }
+
+.winner { background-color: #f7f7f7; }
+.winner .player-name { font-weight: 550; color: #EB4D4D; }
+
+/**********************************************
+*** BUTTON PROPERTIES
+**********************************************/
 
 button {
   width: 40%;
@@ -102,7 +130,8 @@ button {
   cursor: pointer;
   font-weight: 300;
   transition: background-color 0.3s, color 0.3s;
-  border: 2px solid black;
+  background-color: #e7e7e7;
+/*   border: 2px solid black; */
 }
 
 button:hover { font-weight: 600; }
@@ -113,6 +142,11 @@ button:focus {
 
 .btn-new {top: 7%; left: 40%; position: absolute; width: 20%;}
 .btn-roll { margin: 5% auto;}
+
+
+/**********************************************
+*** DICE IMAGE PROPERTIES
+**********************************************/
 
 .dice1, .dice2 {
   position: absolute;
@@ -129,11 +163,6 @@ button:focus {
   left: 53%;
 }
 
-.winner { background-color: #f7f7f7; }
-.winner .player-name { font-weight: 550; color: #EB4D4D; }
-.winningScore {
-  position: absolute;
-  top: 13%;
-  left: 44%;
-  border: 2px solid blue;
-} 
+
+
+
