@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Dice Game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+</head>
+<body>
+    <div class="container"><!-- outer container div -->
+
+            <button class="btn-new">New game</button> 
+            <input type ='text' class ='winningScore' placeholder = 'enter winning score'>
+            <div class="instructions">Click on new game and enter winning score. First player to reach winning score wins game!</div>
+        
+        <div class="player-1-area">
+            <div class="player-name" id="name-1">Player 1</div>
+            <div class="player-total-score" id="total-score-1">43</div>
+            <div class="player-current-box">
+                <div class="player-current-label">Current Roll</div>
+                <div class="player-current-score" id="current-score-1">11</div>
+            </div>
+            <button class="btn-roll" id="btn-roll-1">Roll dice</button> <!-- roll dice button for player 1 -->
+        </div>
+        
+        <div class="player-2-area">
+            <div class="player-name" id="name-2">Player 2</div>
+            <div class="player-total-score" id="total-score-2">72</div>
+            <div class="player-current-box">
+                <div class="player-current-label">Current Roll</div>
+                <div class="player-current-score" id="current-score-2">0</div>
+            </div>
+            <button class="btn-roll" id="btn-roll-2">Roll dice</button> <!-- roll dice button for player 2 -->
+        </div>
+        
+        <!-- dice images -->
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/243004/dice-5.png" alt="Dice" class="dice1">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/243004/dice-5.png" alt="Dice" class="dice2">
+
+    </div> <!-- end container div -->
+</body>
+</html>
 
